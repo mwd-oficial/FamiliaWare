@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalho de PLE</title>
+</head>
+
+<body>
+    <header>
+        <h1><mark>Trabalho de PLE</mark></h1>
+        <h2>Eixo do Trabalho: Tecnologia</h2>
+        <h2>Assunto: Aparelhos Eletrônicos</h2>
+        <h2>Delimitação: Família Ware</h2>
+    </header>
+    <main>
+        <section id="familiaware">
+            <h2>O Sufixo Ware</h2>
+            <p>
+                No inglês, o sufixo ware é usado para conferir a um objeto o material de que ele é feito.
+            </p>
+            <p>
+                Aí temos os conhecidíssimos software, que traduz-se como programa de computador, mas lááá nos idos de
+                1850, era qualquer artigo feito de algodão, que é macio (soft) ao toque, e hardware, que, antes dos
+                computadores invadirem as nossas casas, era como se chamavam as ferragens, ou as lojas de material de
+                construção. Mas hoje também é como se chama a parte física do computador, tudo aquilo que é feito de
+                matéria dura, ou seja, que se pode pegar.
+            </p>
+            <p>
+                Então resumindo: usamos o sufixo “ware” quando falamos de algum artigo ou grupo de artigos feitos de
+                algum material em particular!
+            </p>
+            <p>
+                Dos ware da parte de tecnologia falaremos dos três principais: software, hardware e malware
+            </p>
+        </section>
+        <section id="software">
+            <h2>Parte 1: Software</h2>
+            <img src="softimg.jpg" alt="" class="imgshm">
+            <div>
+                <h3>Definição</h3>
+                <div class="def">Softwares</div>
+                <p>
+                    Como já dito, são programas que coordenam todo o funcionamento dos computadores.
+                    Trata-se de uma série de comandos ou instruções agrupadas, capazes de criar ações que possibilitam o
+                    funcionamento dessas máquinas.
+                </p>
+            </div>
+            <div>
+                <h3>Origem</h3>
+                <div class="def">Código binário</div>
+                <p>Tudo começou com o sistema de numeração binária (ou código binario), criada pelo matemático alemão
+                    Gottfried Leibniz, no século 18. Essa é a linguagem que o computador entende, com os sinais emitidos
+                    pelo código. Sabe aqueles 0 e 1 que vemos em filmes como na Matrix? Então, estes são os dígitos
+                    binários também chamados de bits, que na verdade são as chamadas ondas quadradas (ou binárias),
+                    variando o com sinal(1) e sem sinal(0).
+                </p>
+                <div class="def">Bites e Bytes</div>
+                <p>O conjunto de 8 bites corresponde a 1 byte, que é a porção mínima para a representação de um dado.
+                    Comopor exemplo, 01000001 equivale a letra A, ou seja, quando é apertado a letra A no teclado, o
+                    computador não entende como um A, e sim como 01000001.
+                </p>
+                <p>Assim como 8 bites a 1 byte, os bytes também tem seus multiplos.<br> 1024 bytes = 1 KB - Kilobyte,
+                    1024 KiloBytes = 1 MB - Megabyte,
+                    1024 MegaBytes = 1 GB - Gigabyte e assim sucessivamente, passando pelo Terabyte, Petabyte, Exabyte,
+                    Zettabyte,
+                    Yottabyte, entre outros. Imagine quantos 0 e 1 deve dar isso!
+                </p>
+                <p>Note que MB(B maiúsculo) e Mb(B minúsculo), por exemplo, são diferentes. MB = Megabytes e Mb =
+                    Megabites.
+                    Os Megabytes representam armezenamento, já os Megabites representam transmissão.
+                </p>
+            </div>
+            <div>
+                <h3>Linguagens de Programação</h3>
+                <p>
+                    Se o computador só entende por 0 e 1, então os programadores, para criar um site ou um programa, tem
+                    que ficar escrevendo milhares de 0 e 1? A resposta é não. Existem as chamadas linguagens de
+                    pregramação,
+                    que nada mais são do que a interatividade do usuário ou sistema, que é um intermediário entre a
+                    linguagem humana com o código binário.
+                </p>
+                <div class="def">Linguagens de Programação, HTML e CSS</div>
+                <p>
+                    Conheça as 5 linguagens mais usadas no mundo da programação:<br>
+                    1. JavaScript<br>
+                    2. Python<br>
+                    3. Java<br>
+                    4. TypeScript<br>
+                    5. C#<br>
+                </p>
+                <p>
+                    Para criar sites, além das linguagens de programação, é necessário o uso de HTML e CSS, que não são
+                    linguagens de programação, são outros tipos de linguagem. HTML é o conteúdo do site, como os textos,
+                    imagens, videos audios, listas entre muitos outros. Já o CSS é o estilo do site, como a cor, fonte,
+                    tamanho, posição, entre outras
+                </p>
+            </div>
+            <h3>Um exemplo prático</h3>
+            <div id="rgbf">
+                <div id="parrgb">
+                    <p class="pcenter">Representação de cores: o rgb</p><br>
+                    <p class="pcenter">- rgb (red, green, blue) é um dos tipos de representação de cores em css, sendo 0 o
+                        valor mínimo e 255 o valor máximo</p>
+                </div>
+                <div class="divg">
+                    <span>Red</span>
+                    <input type="button" value="Vermelho" id="r" onclick="red()">
+                    <span id="rgbr">rgb(0, 0, 0)</span>
+                </div>
+
+                <span>+</span>
+
+                <div class="divg">
+                    <span>Green</span>
+                    <input type="button" value="Verde" id="g" onclick="green()">
+                    <span id="rgbg">rgb(0, 0, 0)</span>
+                </div>
+
+                <span>+</span>
+
+                <div class="divg">
+                    <span>Blue</span>
+                    <input type="button" value="Azul" id="b" onclick="blue()">
+                    <span id="rgbb">rgb(0, 0, 0)</span>
+                </div>
+
+                <div id="ig">=</div>
+
+                <div class="divg">
+                    <div id="res">Preto</div>
+                    <span id="rgbres">rgb(0, 0, 0)</span>
+                </div>
+            </div>
+        </section>
+        <section id="hardware">
+            <h2>Parte 2: Hardware</h2>
+            <img src="hardimg.jpg" alt="" class="imgshm">
+            <h3>Definição</h3>
+            <div class="def">Hardware: </div>
+            <p>
+                Parte física do computador, ou seja, o conjunto de aparatos eletrônicos, peças e equipamentos que fazem
+                o computador funcionar. A palavra hardware pode se referir também como o conjunto de equipamentos
+                acoplados em produtos que precisam de algum tipo de processamento computacional.</p>
+            <h3>Conceitos básicos</h3>
+            <div class="def">1. Corrente elétrica: </div>
+            <p>
+                Movimento ordenado entre as cargas elétricas presentes em um condutor metálico. Essa organização de
+                movimento acontece quando se cria um campo elétrico dentro desse condutor, fazendo com que seus elétrons
+                livres desenvolvam um movimento ordenado.
+            </p>
+            <div class="def">2. Tensão elétrica ou diferença de potencial (ddp): </div>
+            <p>
+                Quantidade de energia gerada por pilhas ou baterias que ordena a corrente elétrica e move as cargas
+                elétricas para o restante do circuito elétrico, sendo de suma importância para o funcionamento dos
+                circuitos. Ela é medida em Volt e calculada por meio da primeira lei de Ohm
+            </p>
+            <div class="def">3. Primeira Lei de Ohm: </div>
+            <p>
+                Afirma que a corrente elétrica que atravessa um dispositivo qualquer é sempre diretamente proporcional à
+                diferença de potencial aplicada a esse dispositivo, e a formula é V = R . I)
+            </p>
+            <div class="def">4. Eletrônica: </div>
+            <p>
+                Ciência que estuda a utilização de circuitos formados por componentes elétricos e eletrônicos para
+                representar, armazenar, transmitir ou processar informações.
+            </p>
+            <h3>Exemplos de Componentes Eletrônicos</h3>
+            <div class="def">1. Resistores: </div>
+            <p>
+                São componentes eletrônicos cuja principal função é limitar o fluxo de cargas elétricas por meio da
+                conversão da energia elétrica em energia térmica. Os resistores são geralmente feitos a partir de
+                materiais dielétricos, de grande resistência elétrica.
+            </p>
+            <div class="def">Resistência elétrica: </div>
+            <p>
+                Resistência elétrica (medida no SI: ohms) é a capacidade física de um corpo qualquer se opor à passagem
+                de corrente elétrica mesmo quando existe uma diferença de potencial aplicada, capacidade calculada pela
+                Primeira Lei de Ohm, e, segundo o Sistema Internacional de Unidades (SI), é medida em ohms.
+            </p>
+            <div class="def">2. Potenciômetro: </div>
+            <p>
+                Componente eletrônico que possui resistência elétrica ajustável (elemento resistivo), que possui
+                normalmente três terminais onde a conexão central é deslizante e manipulável via cursor móvel.
+            </p>
+            <div class="def">3. Capacitor ou condensador: </div>
+            <p>
+                é um componente que armazena cargas elétricas num campo elétrico, acumulando um desequilíbrio interno de
+                carga elétrica.
+            </p>
+            <div class="def">Capacitância:</div>
+            <p>
+                Determinada pela quantidade de energia elétrica que pode ser armazenada em si por uma
+                determinada tensão e pela quantidade de corrente alternada que atravessa o capacitor numa determinada
+                freqüência.</p>
+            <div class="def">4. Transistor: </div>
+            <p>
+                Dispositivo semicondutor, geralmente feito de silício ou germânio, usado para amplificar ou atenuar a
+                intensidade da corrente elétrica em circuitos eletrônicos.
+            </p>
+            <div class="def">5. Motor Elétrico: </div>
+            <p>
+                Dispositivo que converte energia elétrica em energia mecânica
+            </p>
+            <div class="def">6. Diodo Semicondutor: </div>
+            <p>
+                Funciona como uma chave fechada (resistência zero) para uma polaridade da tensão de entrada e como uma
+                chave aberta (resistência infinita) para a polaridade oposta. Sendo assim, a função do diodo em um
+                circuito é deixar passar a corrente elétrica em apenas uma polaridade.
+
+            </p>
+            <div class="def">7. LED: </div>
+            <p>
+                é um componente eletrônico semicondutor, ou seja, um diodo emissor de luz ( L.E.D = Light emitter diode
+                ), mesma tecnologia utilizada nos chips dos computadores, que tem a propriedade de transformar energia
+                elétrica em luz.
+            </p>
+            <h3>Exemplos de Circuitos Eletrônicos</h3>
+            <div class="def"> 1. Circuito integrado (ou simplesmente C.I.): </div>
+            <p>
+                é um circuito eletrônico que incorpora miniaturas de diversos componentes (principalmente transistores,
+                diodos, resistores e capacitores), "gravados" em uma pequena lâmina (chip) de silício.
+            </p>
+            <div class="def">2. Memoria RAM: </div>
+            <p>
+                sua função é um espaço de armazenamento temporário do seu PC, laptop, smartphone, tablet ou console de
+                jogos. Ela é usada para armazenar dados que estão sendo processados neste momento pela sua máquina.
+            </p>
+            <div class="def">3. Processador ou CPU (central processing unit): </div>
+            <p>
+                Componente de hardware responsável por processar dados e transformar em informação. Ele também transmite
+                estas informações para a placa mãe, que por sua vez as transmite para onde é necessário (como o monitor,
+                impressora, outros dispositivos).
+            </p>
+            <div class="def">4. Placa de Video: </div>
+            <p>
+                Alem de cumprir a função básica de exibir imagens na tela, a placa de vídeo pode ser também utilizada
+                para rodar games e softwares que demandam muito processamento visual. Ocasionalmente a placa de vídeo
+                pode ser usada também como auxiliar em alguns programas, normalmente como "aceleração por hardware".
+            </p>
+            <div class="def">5. HD: </div>
+            <p>
+                Serve para guardar informações pessoais entre outros
+            </p>
+            <div class="def">6. Fonte de energia do computador
+            </div>
+            <p>
+                Também chamado, em inglês de PSU - Power Supply Unit - Unidade de Alimentação de Energia. É responsável
+                por converter a corrente alternada em corrente contínua, ou seja, converter a voltagem da energia
+                elétrica, que chega pelas tomadas, em voltagens menores, capazes de ser suportadas pelos
+                componentes do computador.
+            </p>
+            <h3>Extra: o Arduino</h3>
+            <div class='def'>Arduino:</div>
+            <p>
+                Plataforma de prototipagem eletrônica de hardware livre e de placa única, projetada com um
+                microcontrolador Atmel AVR com suporte de entrada/saída embutido, uma linguagem de programação padrão, a
+                qual tem origem em Wiring, e é essencialmente C/C++. Ele serve para facilitar o aprendizado de
+                programação, ensinando as pessoas a desenvolverem projetos de eletrônica e de robótica, automatizar
+                escritório, criar um novo brinquedo ou jogos, etc.
+            </p>
+            <div id="exhard">
+                <h3>Um exemplo prático</h3>
+                <div id="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HpvcHOqbj9A"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <p class="pcenter">Veja aqui esse projeto no tinkercad funcionando:</p><br>
+                <p id="tin"><a href='https://www.tinkercad.com/things/kB8yrY7nNi2' target="_blank"><img src="Imgtin.png"
+                            alt="img tinkercad" id="imgtin"></a></p>
+                <p>
+                    Clique em SIMULAR e depois INICIAR SIMULAÇÃO. Depois é só clicar no botão do projeto (indicado pela
+                    seta vermelha) e veja ele funcionando!
+                </p>
+            </div>
+
+        </section>
+        <section id="malware">
+            <h2>Parte 3: Malware</h2>
+            <img src="malimg.jpg" alt="" class="imgshm">
+            <p>Seria ótimo se a Internet fosse um lugar seguro e íntegro para todos, mas não podemos negar que os
+                criminosos on-line e os hackers estão escondidos por toda parte, tentando causar problemas. Uma forma
+                usada por eles para causar problemas é espalhar malware. Você pode se proteger ao entender o que é um
+                malware, como ele se espalha e como evitá-lo.</p>
+            <h3>Definição</h3>
+            <div class="def">Malware:</div>
+            <p>É qualquer software intencionalmente feito para causar danos a um computador, servidor, cliente, ou a uma
+                rede de computadores. Embora malware não possa danificar o hardware físico dos sistemas e equipamentos
+                de rede, ele pode roubar, criptografar ou excluir seus dados, alterar ou sequestrar funções essenciais
+                do computador, espionar a atividade de seu computador, fazer com que ele funcione com mais lentidão
+                gradualmente ou até mesmo enviar e-mails falsos da sua conta de e-mail sem que você saiba. </p>
+            <h3>Origem</h3>
+            <div class="def">Creeper</div>
+            <p>Conforme observado pela Discovery, o programa Creeper, em muitos casos considerado o primeiro vírus, foi
+                criado em 1971 por Bob Thomas da BBN. O Creeper foi, na verdade, criado como um teste de segurança para
+                conferir se um programa era capaz de se replicar. E era — mais ou menos. Em cada novo disco rígido
+                infectado, o Creeper tentava se remover do host anterior. O Creeper não tinha um objetivo malicioso e
+                apenas exibia a mensagem: "I'M THE CREEPER. CATCH ME IF YOU CAN!"</p>
+            <h3>Tipos</h3>
+            <p>Veja alguns tipos comuns de malware dos quais você pode ter ouvido falar:</p>
+            <div class="def">Vírus:</div>
+            <p>Um programa que pode copiar a si mesmo e infectar um computador.</p>
+            <div class="def">Worm:</div>
+            <p>Um programa de computador malicioso que envia cópias dele mesmo a outros computadores por meio de uma
+                rede.</p>
+            <div class="def">Spyware: </div>
+            <p>Malware que coleta informações das pessoas sem que elas saibam.</p>
+            <div class="def">Adware:</div>
+            <p>Software que reproduz, exibe ou faz o download automaticamente de anúncios em um computador.</p>
+            <div class="def">Cavalo de Troia: </div>
+            <p>Um programa destrutivo que simula um aplicativo útil, mas causa danos ao computador ou rouba informações
+                depois de instalado.</p>
+            <h3>Como se espalha</h3>
+            <div class="def">Se espalha de várias formas como:</div>
+            <p>1. Fazer o download de softwares gratuitos da Internet que contêm malware oculto<br>
+                2. acessar websites infectados com malware<br>
+                3. clicar em uma mensagem de erro falsa ou janela pop-up que inicia o download de um malware<br>
+                4. abrir um anexo de e-mail que contém um malware<br>
+                5. entre outros</p>
+            <div class="def">Solução:</div>
+            <p>Há muitas formas diferentes de um malware se espalhar, mas isso não significa que não é possível detê-lo.
+                Se você precisar fazer o download de algo, use um programa antivírus para verificar se há malware no
+                item de download antes de abri-lo. O software antivírus também permite que você realize uma verificação
+                de todo o seu computador à procura de malware. É recomendável realizar verificações regularmente no seu
+                computador para detectar a existência de malware o quanto antes e evitar que eles se espalhem.</p>
+
+            <div id="exmal">
+                <h3>Um exemplo prático</h3>
+                <div id="excomp">
+                    <input type="button" value="Clique para ver" class="vista" id="ver" onclick="ver()">
+                    <div id="malpri1" class="divmalpri">
+                        <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri">
+                    </div>
+                    <div id="malpri2" class="divmalpri">
+                        <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri">
+                    </div>
+                    <div id="malpri3" class="divmalpri">
+                        <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri">
+                    </div>
+                    <div id="malpri4" class="divmalpri">
+                        <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri">
+                    </div>
+                    <div id="malpri5" class="divmalpri">
+                        <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri">
+                    </div>
+                    <div id="malpri6" class="divmalpri">
+                        <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri">
+                    </div>
+                    <div id="malpri7" class="divmalpri">
+                        <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri">
+                    </div>
+                    <div id="malpri8" class="divmalpri">
+                        <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri">
+                    </div>
+                    <div id="malpri9" class="divmalpri">
+                        <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri">
+                    </div>
+                    <div id="malpri10" class="divmalpri">
+                        <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri">
+                    </div>
+                    <div id="malpri11" class="divmalpri">
+                        <div id="x" onclick="prox()">X</div>
+                        <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri"><br>
+                        <p class="ant">Instale este antivírus para se proteger!</p><input type="button"
+                            value="↓ DOWNLOAD" class="download" onclick="pro()">
+                    </div>
+                    <div id="malpriex">
+                        <p>
+                            Ao navegar na Web, é possível encontrar sites com janelas pop-up que fazem você acreditar
+                            que seu computador foi infectado e solicitam que faça o download de um software para sua
+                            proteção, como neste exemplo. Os downloads são uma das principais formas de infecção por
+                            malware.
+                        </p>
+                        <p id="px">Você não caiu nesse golpe. Fechou a janela pop-up e não clicou em nada que ela
+                            contenha. Parabéns!</p>
+                        <p id="pnx">Você caiu no golpe. Sua escolha foi realizar a instalação do falso antivírus, então
+                            pegou um malware. Em uma situação verdadeira, pense duas vezes antes de clicar em links ou
+                            fazer o download de qualquer elemento.</p><br>
+                        <input type="button" value="Ok" class="botao" onclick="limp()">
+                    </div>
+                </div>
+                <div id="excell">
+                    <input type="button" value="Clique para ver" class="vista" id="vercell" onclick="vercell()">
+                    <div id="malpricell" class="divmalpri">
+                        <div id="xcell" onclick="proxcell()">X</div>
+                        <div id="cellcentro">
+                            <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri"><br>
+                            <p class="ant">Instale este antivírus agora para se proteger!</p><input type="button"
+                                value="↓ DOWNLOAD" class="download" onclick="procell()">
+                        </div>
+                    </div>
+                    <div id="malpriexcell">
+                        <div id="cellcentro2">
+                            <p>
+                                Ao navegar na Web, é possível encontrar sites com janelas pop-up que fazem você
+                                acreditar que seu computador foi infectado e solicitam que faça o download de um
+                                software para sua proteção, como neste exemplo. Os downloads são uma das principais
+                                formas de infecção por malware.
+                            </p><br>
+                            <p id="pxcell">Você não caiu nesse golpe. Fechou a janela pop-up e não clicou em nada que
+                                ela contenha. Parabéns!</p>
+                            <p id="pnxcell">Você caiu no golpe. Sua escolha foi realizar a instalação do falso
+                                antivírus, então pegou um malware. Em uma situação verdadeira, pense duas vezes antes de
+                                clicar em links ou fazer o download de qualquer elemento.</p><br>
+                            <input type="button" value="Ok" class="botao" onclick="limpcell()">
+                        </div>
+                    </div>
+                </div>
+                <p class="pcenter" id="apenas"><strong>É apenas um exemplo</strong></p>
+        </section>
+        <section id="outros">
+            <h2>Outros Ware</h2>
+            <p>Já falamos de software, hardware e malware. Mas a sua família não para por aí! Quer exemplos?</p>
+            <p>treeware, shareware, trialware, demoware, scareware, vaporware, donationware, payware,
+                betaware, testware, middleware, firmware, warez, entre muitos outros</p>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/mwd-oficial" target="_blank"><img src="logoMWDt.png" alt="" id="logo"></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

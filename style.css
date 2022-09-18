@@ -1,0 +1,736 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor4: rgb(173, 216, 230);
+    --cor5: rgb(218, 177, 252);
+    --cor6: rgb(186, 252, 177);
+    --cor7: rgb(242, 226, 171);
+    --cor8: rgb(245, 194, 184);
+    --cor12: rgb(255, 202, 103);
+}
+
+
+
+body {
+    text-align: center;
+    font: normal 17.5px cursive;
+    background-image: linear-gradient(to bottom, lightblue, rgb(175, 255, 230), lightblue);
+}
+
+header {
+    background-color: var(--cor12);
+    border: 10px solid var(--cor6);
+    margin-bottom: 40px;
+}
+
+mark {
+    background-color: var(--cor8);
+    border: 5px solid var(--cor5);
+}
+
+h1 {
+    padding: 20px 0px;
+}
+
+main {
+    margin: auto;
+    background-color: white;
+    border: 10px solid lightgray;
+    border-radius: 40px;
+    padding: 0px 0px;
+    min-width: 300px;
+    max-width: 1000px;
+}
+
+p {
+    text-align: justify;
+    padding: 0px 30px 30px 30px;
+
+}
+
+main h2 {
+    background-image: linear-gradient(to right, transparent, var(--cor6), transparent);
+    padding: 20px 0px;
+    margin: 40px 20px;
+}
+
+main h3 {
+    background-image: linear-gradient(to right, transparent, var(--cor8), transparent);
+    padding: 10px 0px;
+    margin: 20px 20px;
+}
+
+.def {
+    background-color: var(--cor7);
+    padding: 0;
+    padding-left: 10px;
+    text-align: left;
+}
+
+div {
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.imgshm {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#r {
+    font: normal 17.5px cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.518);
+    width: 150px;
+    height: 100px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+#r:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+#r:not(:hover) {
+    transition-duration: 0.5s;
+}
+
+#g {
+    font: normal 17.5px cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.518);
+    width: 150px;
+    height: 100px;
+    margin: 10px 10px;
+    cursor: pointer;
+
+}
+
+#g:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+#g:not(:hover) {
+    transition-duration: 0.5s;
+}
+
+#b {
+    font: normal 17.5px cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.518);
+    width: 150px;
+    height: 100px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+#b:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+#b:not(:hover) {
+    transition-duration: 0.5s;
+}
+
+#res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.518);
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    margin: 10px 0px;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    #parrgb {
+        font-size: 14px;
+    }
+
+    #rgbf {
+        font-size: 10px;
+    }
+
+    #r {
+        width: 60px;
+        height: 40px;
+        font-size: 10px;
+        border: 3px solid white;
+    }
+    
+    #r:hover {
+        transform: scale(1.2);
+        transition-duration: 0.5s;
+    }
+
+    #g {
+        width: 60px;
+        height: 40px;
+        font-size: 10px;
+        border: 3px solid white;
+    }
+
+    #g:hover {
+        transform: scale(1.2);
+        transition-duration: 0.5s;
+    }
+
+    #b {
+        width: 60px;
+        height: 40px;
+        font-size: 10px;
+        border: 3px solid white;
+
+    }
+    
+    #b:hover {
+        transform: scale(1.2);
+        transition-duration: 0.5s;
+    }
+
+    #res {
+        width: 55px;
+        height: 0px;
+        font-size: 10px;
+        border: 3px solid white;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #cellcentro {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 17.5px;
+        display: none;
+    }
+
+    #cellcentro2 {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 17.5px;
+        display: none;
+    }
+
+    #malpricell {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        background-color: white;
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+        display: none;
+        animation: maldet 0.5s linear infinite;
+    }
+
+    #malpriexcell {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        background-color: white;
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    #xcell {
+        position: absolute;
+        top: 10;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 0px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    #malpriexcell p {
+        padding: 0px;
+    }
+
+    @keyframes maldet {
+        0% {
+            background-color: white;
+        }
+
+        50% {
+            background-color: red;
+        }
+
+        100% {
+            background-color: white;
+        }
+    }
+
+    #excomp {
+        display: none;
+    }
+
+    #logo {
+        width: 200px;
+    }
+}
+
+.divg {
+    display: inline-block;
+}
+
+#ig {
+    padding: 20px 0px 0px 0px;
+}
+
+#rgbf {
+    background-color: var(--cor4);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.502);
+    border-radius: 20px;
+    width: 95%;
+}
+
+.pcenter {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.ingport {
+    display: block;
+}
+
+#video {
+    width: 91%;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+#video>iframe {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+#exhard {
+    background-color: var(--cor4);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 95%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#exmal {
+    background-color: var(--cor4);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 95%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 600px) {
+
+    #malpri1 {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: white;
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        display: none;
+        animation: maldet 0.5s linear infinite;
+    }
+
+    #malpri2 {
+        position: fixed;
+        top: 30px;
+        left: 600px;
+        background-color: white;
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        display: none;
+        animation: maldet 0.5s linear infinite;
+    }
+
+    #malpri3 {
+        position: fixed;
+        top: 250px;
+        left: 500px;
+        background-color: white;
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        display: none;
+        animation: maldet 0.5s linear infinite;
+    }
+
+    #malpri4 {
+        position: fixed;
+        top: 400px;
+        left: 100px;
+        background-color: white;
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        display: none;
+        animation: maldet 0.5s linear infinite;
+    }
+
+    #malpri5 {
+        position: fixed;
+        top: 180px;
+        left: 750px;
+        background-color: white;
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        display: none;
+        animation: maldet 0.5s linear infinite;
+    }
+
+    #malpri6 {
+        position: fixed;
+        top: 20px;
+        left: 350px;
+        background-color: white;
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        display: none;
+        animation: maldet 0.5s linear infinite;
+    }
+
+    #malpri7 {
+        position: fixed;
+        top: 320px;
+        left: 700px;
+        background-color: white;
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        display: none;
+        animation: maldet 0.5s linear infinite;
+    }
+
+    #malpri8 {
+        position: fixed;
+        top: 370px;
+        left: 40px;
+        background-color: white;
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        display: none;
+        animation: maldet 0.5s linear infinite;
+    }
+
+    #malpri9 {
+        position: fixed;
+        top: 70px;
+        left: 60px;
+        background-color: white;
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        display: none;
+        animation: maldet 0.5s linear infinite;
+    }
+
+    #malpri10 {
+        position: fixed;
+        top: 20px;
+        left: 740px;
+        background-color: white;
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        display: none;
+        animation: maldet 0.5s linear infinite;
+    }
+
+    #malpri11 {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 1px solid black;
+        width: 50%;
+        height: 55%;
+        display: none;
+        animation: maldet 0.5s linear infinite;
+    }
+
+
+    #malpriex {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 1px solid black;
+        width: 50%;
+        height: 55%;
+        display: none;
+    }
+
+    #x {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 0px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    #px {
+        display: none;
+    }
+    #pnx {
+        display: none;
+        padding-bottom: 0;
+    }
+
+    @keyframes maldet {
+        0% {
+            background-color: white;
+        }
+
+        50% {
+            background-color: red;
+        }
+
+        100% {
+            background-color: white;
+        }
+    }
+
+    #excell {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    #malpriex {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 750px)  {
+    #malpriex {
+        font-size: 12.5px;
+    }
+}
+
+
+#apenas {
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.pmalpri {
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    width: 200px;
+    background-color: rgb(248, 156, 14);
+    border: 5px solid rgb(26, 26, 26);
+    border-radius: 20px;
+}
+.ant {
+    text-align: center;
+    background-color: rgb(248, 156, 14);
+    border: 5px solid rgb(26, 26, 26);
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.imgmalpri {
+    margin: auto;
+    margin: 20px 0px;
+    width: 200px;
+}
+
+.botao {
+    background-color: var(--cor5);
+    border: 5px solid var(--cor6);
+    border-radius: 50px;
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: rgb(200, 125, 250);
+    border: 5px solid rgb(150, 250, 125);
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.download {
+    background-color: green;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+    animation: pular 2s linear infinite;
+}
+
+.download:hover {
+    background-color: rgb(0, 255, 0);
+}
+
+
+.botao:not(:hover) {
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.vista:hover {
+    background-color: rgb(255, 222, 160);
+    border: 10px solid rgb(255, 205, 105);
+
+}
+
+.vista {
+    padding: 20px;
+    margin: 30px 0px;
+    font-size: 25px;
+    background-color: var(--cor12);
+    border: 10px solid orange;
+    border-radius: 50px;
+    cursor: pointer;
+    animation: pular 2s linear infinite;
+}
+
+@keyframes pular {
+    0% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+#imgtin {
+    width: 100%;
+}
+
+#tin {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    padding-bottom: 0px;
+    border-radius: 40px;
+}
+
+#tin:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+#tin:not(:hover) {
+    transition-duration: 0.5s;
+}
+
+footer {
+    padding: 10px;
+    background-color: var(--cor5);
+    border: 10px solid var(--cor6);
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
+#logo {
+    max-width: 300px;
+    margin: auto;
+    margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 40px;
+}
+
+#logo:hover {
+    transform: rotateZ(360deg) scale(1.5);
+    transition-duration: 0.5s;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+#logo:not(:hover) {
+    transition-duration: 0.5s;
+}
