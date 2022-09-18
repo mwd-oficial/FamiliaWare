@@ -18,7 +18,7 @@
 
 body {
     text-align: center;
-    font: normal 17.5px 'choco cooky';
+    font: normal 17.5px Arial;
     background-image: linear-gradient(to bottom, lightblue, rgb(175, 255, 230), lightblue);
 }
 
@@ -84,7 +84,7 @@ div {
 }
 
 #r {
-    font: normal 17.5px 'choco cooky';
+    font: normal 17.5px Arial;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +111,7 @@ div {
 }
 
 #g {
-    font: normal 17.5px 'choco cooky';
+    font: normal 17.5px Arial;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +139,7 @@ div {
 }
 
 #b {
-    font: normal 17.5px 'choco cooky';
+    font: normal 17.5px Arial;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,6 +303,7 @@ div {
 
     #malpriexcell p {
         padding: 0px;
+        font-size: 17px;
     }
 
     @keyframes maldet {
