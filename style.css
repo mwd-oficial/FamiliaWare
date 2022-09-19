@@ -40,12 +40,13 @@ h1 {
 main {
     margin: auto;
     background-color: white;
-    border: 10px solid lightgray;
+    border: 10px solid var(--cor6);
     border-radius: 40px;
     padding: 0px 0px;
     min-width: 300px;
     max-width: 1000px;
 }
+
 
 p {
     text-align: justify;
@@ -256,8 +257,7 @@ div {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 17.5px;
-        display: none;
+        width: 90%;
     }
 
     #malpricell {
