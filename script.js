@@ -35,7 +35,7 @@ function red() {
             rgbres.innerHTML = 'rgb(0, 0, 255)'
             res.innerHTML = 'Azul'
             res.style.color = 'white'
-            res.style.border = '3px solid white'
+            res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
         } else {
             res.style.backgroundColor = 'black'
@@ -117,7 +117,7 @@ function green() {
             rgbres.innerHTML = 'rgb(0, 0, 255)'
             res.innerHTML = 'Azul'
             res.style.color = 'white'
-            res.style.border = '3px solid white'
+            res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
         } else {
             res.style.backgroundColor = 'black'
@@ -225,7 +225,7 @@ function blue() {
         rgbres.innerHTML = 'rgb(255, 0, 255)'
         res.innerHTML = 'Magenta'
         b.style.color = 'white'
-        b.style.border = '3px solid white'
+        b.style.border = '3px solid black'
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
@@ -236,7 +236,7 @@ function blue() {
         rgbres.innerHTML = 'rgb(0, 255, 255)'
         res.innerHTML = 'Ciano'
         b.style.color = 'white'
-        b.style.border = '3px solid white'
+        b.style.border = '3px solid black'
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
@@ -247,9 +247,9 @@ function blue() {
         rgbres.innerHTML = 'rgb(0, 0, 255)'
         res.innerHTML = 'Azul'
         b.style.color = 'white'
-        b.style.border = '3px solid white'
+        b.style.border = '3px solid black'
         res.style.color = 'white'
-        res.style.border = '3px solid white'
+        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
     }
 }
