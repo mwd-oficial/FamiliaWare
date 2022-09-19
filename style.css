@@ -710,6 +710,17 @@ div {
     transition-duration: 0.5s;
 }
 
+#ace {
+    background-color: white;
+    border: 5px solid var(--cor6);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 400px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
 footer {
     padding: 10px;
     background-color: var(--cor5);
