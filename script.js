@@ -6,6 +6,16 @@ let b = document.getElementById('b')
 let rgbb = document.getElementById('rgbb')
 let res = document.getElementById('res')
 let rgbres = document.getElementById('rgbres')
+let vermelho = false
+let verde = false
+let azul = false
+let magenta = false
+let amarelo = false
+let ciano = false
+let branco = false
+let divqcor = document.getElementById('divqcor')
+let cor = document.getElementById('qcor')
+let qcor = 1
 
 function red() {
     if (r.style.backgroundColor == 'red') {
@@ -23,6 +33,16 @@ function red() {
             res.style.color = 'black'
             res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
+            if (!ciano) {
+                qcor = qcor + 1
+                cor.innerHTML = qcor
+                ciano = true;
+            }
+            if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
         } else if (r.style.backgroundColor != 'red' && g.style.backgroundColor == 'rgb(0, 255, 0)') {
             res.style.backgroundColor = 'rgb(0, 255, 0)'
             rgbres.innerHTML = 'rgb(0, 255, 0)'
@@ -30,6 +50,16 @@ function red() {
             res.style.color = 'black'
             res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
+            if (!verde) {
+                qcor = qcor + 1
+                cor.innerHTML = qcor
+                verde = true;
+            }
+            if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
         } else if (r.style.backgroundColor != 'red' && b.style.backgroundColor == 'blue') {
             res.style.backgroundColor = 'blue'
             rgbres.innerHTML = 'rgb(0, 0, 255)'
@@ -37,7 +67,17 @@ function red() {
             res.style.color = 'white'
             res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
-        } else {
+             if (!azul) {
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            azul = true;
+        }
+
+if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }    } else {
             res.style.backgroundColor = 'black'
             rgbres.innerHTML = 'rgb(0, 0, 0)'
         }
@@ -53,6 +93,16 @@ function red() {
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
+        if (!branco) {
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            branco = true;
+        }
+        if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
     } else if (g.style.backgroundColor == 'rgb(0, 255, 0)') {
         r.style.backgroundColor = 'red'
         rgbr.innerHTML = 'rgb(255, 0, 0)'
@@ -64,6 +114,16 @@ function red() {
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
+        if (!amarelo) {
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            amarelo = true;
+        }
+        if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
     } else if (b.style.backgroundColor == 'blue') {
         r.style.backgroundColor = 'red'
         rgbr.innerHTML = 'rgb(255, 0, 0)'
@@ -75,6 +135,16 @@ function red() {
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
+        if (!magenta) {
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            magenta = true;
+        }
+        if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
     } else {
         r.style.backgroundColor = 'red'
         rgbr.innerHTML = 'rgb(255, 0, 0)'
@@ -86,6 +156,16 @@ function red() {
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
+        if (!vermelho) {
+                qcor = qcor + 1
+                cor.innerHTML = qcor
+                vermelho = true;
+         
+         if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }   }
     }
 }
 
@@ -105,6 +185,16 @@ function green() {
             res.style.color = 'black'
             res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
+            if (!magenta) {
+                qcor = qcor + 1
+                cor.innerHTML = qcor
+                magenta = true;
+            }
+            if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
         } else if (g.style.backgroundColor != 'rgb(0, 255, 0)' && r.style.backgroundColor == 'red') {
             res.style.backgroundColor = 'red'
             rgbres.innerHTML = 'rgb(255, 0, 0)'
@@ -112,6 +202,16 @@ function green() {
             res.style.color = 'black'
             res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
+            if (!vermelho) {
+                qcor = qcor + 1
+                cor.innerHTML = qcor
+                vermelho = true;
+            }
+            if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
         } else if (g.style.backgroundColor != 'rgb(0, 255, 0)' && b.style.backgroundColor == 'blue') {
             res.style.backgroundColor = 'blue'
             rgbres.innerHTML = 'rgb(0, 0, 255)'
@@ -119,6 +219,16 @@ function green() {
             res.style.color = 'white'
             res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
+            if (!azul) {
+                qcor = qcor + 1
+                cor.innerHTML = qcor
+                azul = true;
+            }
+            if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
         } else {
             res.style.backgroundColor = 'black'
             rgbres.innerHTML = 'rgb(0, 0 , 0)'
@@ -135,6 +245,16 @@ function green() {
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
+        if (!branco) {
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            branco = true;
+        }
+        if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
     } else if (r.style.backgroundColor == 'red') {
         g.style.backgroundColor = 'rgb(0, 255, 0)'
         rgbg.innerHTML = 'rgb(0, 255, 0)'
@@ -146,6 +266,16 @@ function green() {
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
+        if (!amarelo) {
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            amarelo = true;
+        }
+        if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
     } else if (b.style.backgroundColor == 'blue') {
         g.style.backgroundColor = 'rgb(0, 255, 0)'
         rgbg.innerHTML = 'rgb(0, 255, 0)'
@@ -157,6 +287,16 @@ function green() {
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
+        if (!ciano) {
+                qcor = qcor + 1
+                cor.innerHTML = qcor
+                ciano = true;
+         
+         if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }   }
     } else {
         g.style.backgroundColor = 'rgb(0, 255, 0)'
         rgbg.innerHTML = 'rgb(0, 255, 0)'
@@ -168,6 +308,16 @@ function green() {
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
+        if (!verde) {
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            verde = true;
+        }
+        if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
     }
 }
 
@@ -188,6 +338,16 @@ function blue() {
             res.style.color = 'black'
             res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
+            if (!amarelo) {
+                qcor = qcor + 1
+                cor.innerHTML = qcor
+                amarelo = true;
+            }
+            if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
         } else if (b.style.backgroundColor != 'blue' && r.style.backgroundColor == 'red') {
             res.style.backgroundColor = 'red'
             rgbres.innerHTML = 'rgb(255, 0, 0)'
@@ -195,6 +355,16 @@ function blue() {
             res.style.color = 'black'
             res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
+            if (!vermelho) {
+                qcor = qcor + 1
+                cor.innerHTML = qcor
+                vermelho = true;
+            }
+            if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
         } else if (b.style.backgroundColor != 'blue' && g.style.backgroundColor == 'rgb(0, 255, 0)') {
             res.style.backgroundColor = 'rgb(0, 255, 0)'
             rgbres.innerHTML = 'rgb(0, 255, 0)'
@@ -202,6 +372,16 @@ function blue() {
             res.style.color = 'black'
             res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
+            if (!verde) {
+                qcor = qcor + 1
+                cor.innerHTML = qcor
+                verde = true;
+            }
+            if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
         } else {
             res.style.backgroundColor = 'black'
             rgbres.innerHTML = 'rgb(0, 0, 0)'
@@ -218,6 +398,16 @@ function blue() {
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
+        if (!branco) {
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            branco = true;
+        }
+        if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
     } else if (r.style.backgroundColor == 'red') {
         b.style.backgroundColor = 'blue'
         rgbb.innerHTML = 'rgb(0, 0, 255)'
@@ -229,6 +419,16 @@ function blue() {
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
+        if (!magenta) {
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            magenta = true;
+        }
+        if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
     } else if (g.style.backgroundColor == 'rgb(0, 255, 0)') {
         b.style.backgroundColor = 'blue'
         rgbb.innerHTML = 'rgb(0, 0, 255)'
@@ -240,6 +440,16 @@ function blue() {
         res.style.color = 'black'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
+        if (!ciano) {
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            ciano = true;
+        }
+        if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
     } else {
         b.style.backgroundColor = 'blue'
         rgbb.innerHTML = 'rgb(0, 0, 255)'
@@ -251,8 +461,19 @@ function blue() {
         res.style.color = 'white'
         res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
+        if (!azul) {
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            azul = true;
+        }
+        if (qcor == 8) {
+            divqcor.innerHTML = 'Todas as cores encontradas!'
+            divqcor.style.backgroundColor = 'yellow'
+            divqcor.style.border = '5px solid black'
+        }
     }
 }
+
 
 var malpri1 = document.getElementById('malpri1')
 var malpri2 = document.getElementById('malpri2')
