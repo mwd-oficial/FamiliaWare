@@ -105,36 +105,39 @@
                         valor mínimo e 255 o valor máximo</p>
                     </div>
                     <p class="parrgb">- Clique nos botões <strong>vermelho, verde e azul</strong> e descubra todas as cores</p>
-                    <div id="divqcor" class="parrgb"><p id="qcor">1</p> de 8 cores encontradas</div>
-                <div class="divg">
-                    <span>Red</span>
-                    <input type="button" value="Vermelho" id="r" onclick="red()">
-                    <span id="rgbr">rgb(0, 0, 0)</span>
-                </div>
-
-                <span>+</span>
-
-                <div class="divg">
-                    <span>Green</span>
-                    <input type="button" value="Verde" id="g" onclick="green()">
-                    <span id="rgbg">rgb(0, 0, 0)</span>
-                </div>
-
-                <span>+</span>
-
-                <div class="divg">
-                    <span>Blue</span>
-                    <input type="button" value="Azul" id="b" onclick="blue()">
-                    <span id="rgbb">rgb(0, 0, 0)</span>
-                </div>
-
-                <div id="ig">=</div>
-                
-                <div id="res">Preto</div>
-                <div class="divg" id="divgrgbres">
-                    <span id="rgbres">rgb(0, 0, 0)</span>
-                </div>
-                <p class="parrgb">- Além da representação de cores por <strong>rgb</strong>, ainda temos os <strong> hexadecimais(#), hsl e hwb</strong></p>
+                    
+                    <div id="divqcor" class="parrgb"><p id="qcor">1</p> de 8 cores encontradas
+                    </div>
+                    <div class="divg">
+                        <span class="rgbfont">Red</span>
+                        <input type="button" value="Vermelho" id="r" onclick="red()">
+                        <span id="rgbr" class="rgbfont">rgb(0, 0, 0)</span>
+                    </div>
+                    
+                    <span>+</span>
+                    
+                    <div class="divg">
+                        <span class="rgbfont">Green</span>
+                        <input type="button" value="Verde" id="g" onclick="green()">
+                        <span id="rgbg" class="rgbfont">rgb(0, 0, 0)</span>
+                    </div>
+                    
+                    <span>+</span>
+                    
+                    <div class="divg">
+                        <span class="rgbfont">Blue</span>
+                        <input type="button" value="Azul" id="b" onclick="blue()">
+                        <span id="rgbb" class="rgbfont">rgb(0, 0, 0)</span>
+                    </div>
+                    
+                    <div id="ig">=</div>
+                    
+                    <div id="res">Preto</div>
+                    <div class="divg" id="divgrgbres">
+                        <span id="rgbres" class="rgbfont">rgb(0, 0, 0)</span>
+                    </div>
+                    <div id='atualizar' onclick="atualizar()"><img src="reload-circle-outline.svg" alt=""></div>
+                    <p class="parrgb" id="atupadd">- Além da representação de cores por <strong>rgb</strong>, ainda temos os <strong> hexadecimais(#), hsl e hwb</strong></p>
                 <p class="parrgb">- Neste exemplo, foi usado <strong>HTML, CSS e JavaScript</strong> que manipulou o <strong>HTML e CSS.</strong></p>
             </div>
         </section>
@@ -365,7 +368,7 @@
                         <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri">
                     </div>
                     <div id="malpri11" class="divmalpri">
-                        <div id="x" onclick="prox()">X</div>
+                        <div id="x" onclick="prox()"><img src="close-circle-outline.svg" alt=""></div>
                         <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri"><br>
                         <p class="ant">Instale este antivírus para se proteger!</p><input type="button"
                             value="↓ DOWNLOAD" class="download" onclick="pro()">
@@ -388,7 +391,7 @@
                 <div id="excell">
                     <input type="button" value="Clique para ver" class="vista" id="vercell" onclick="vercell()">
                     <div id="malpricell" class="divmalpri">
-                        <div id="xcell" onclick="proxcell()">X</div>
+                        <div id="xcell" onclick="proxcell()"><img src="close-circle-outline.svg" alt=""></ion-icon></div>
                         <div id="cellcentro">
                             <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri"><br>
                             <p class="ant">Instale este antivírus agora para se proteger!</p><input type="button"
@@ -425,6 +428,11 @@
     <footer>
         <a href="https://github.com/mwd-oficial" target="_blank"><img src="logoMWDt.png" alt="" id="logo"></a>
     </footer>
+    <div id="f"></div>
+            <div id="todas">
+                <p id="todasp">Todas as cores encontradas!</p>
+                <input type="button" value="Ok" class='botao' id="botaocor" onclick="limpcor()">
+            </div>
     <script src="script.js"></script>
 </body>
 

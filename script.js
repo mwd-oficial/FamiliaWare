@@ -16,6 +16,8 @@ let branco = false
 let divqcor = document.getElementById('divqcor')
 let cor = document.getElementById('qcor')
 let qcor = 1
+let f = document.getElementById('f')
+let todas = document.getElementById('todas')
 
 function red() {
     if (r.style.backgroundColor == 'red') {
@@ -38,10 +40,11 @@ function red() {
                 ciano = true;
             }
             if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
-        }
+                todas.style.display = 'flex'
+                f.style.display = 'block'
+                qcor = qcor + 1
+            }
+
         } else if (r.style.backgroundColor != 'red' && g.style.backgroundColor == 'rgb(0, 255, 0)') {
             res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), rgb(0, 255, 0), rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(0, 255, 0)'
@@ -54,10 +57,11 @@ function red() {
                 verde = true;
             }
             if (qcor == 8) {
-                divqcor.innerHTML = 'Todas as cores encontradas!'
-                divqcor.style.backgroundColor = 'yellow'
-                divqcor.style.border = '5px solid black'
-        }
+                todas.style.display = 'flex'
+                f.style.display = 'block'
+                qcor = qcor + 1
+            }
+
         } else if (r.style.backgroundColor != 'red' && b.style.backgroundColor == 'blue') {
             res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), blue, rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(0, 0, 255)'
@@ -72,14 +76,16 @@ function red() {
             }
 
             if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
-        }    } else {
+                todas.style.display = 'flex'
+                f.style.display = 'block'
+                qcor = qcor + 1
+            }
+
+        } else {
             res.style.backgroundColor = 'black'
             rgbres.innerHTML = 'rgb(0, 0, 0)'
         }
-        
+
     } else if (g.style.backgroundColor == 'rgb(0, 255, 0)' && b.style.backgroundColor == 'blue') {
         r.style.backgroundColor = 'red'
         rgbr.innerHTML = 'rgb(255, 0, 0)'
@@ -96,10 +102,11 @@ function red() {
             branco = true;
         }
         if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
+            todas.style.display = 'flex'
+            f.style.display = 'block'
+            qcor = qcor + 1
         }
+
     } else if (g.style.backgroundColor == 'rgb(0, 255, 0)') {
         r.style.backgroundColor = 'red'
         rgbr.innerHTML = 'rgb(255, 0, 0)'
@@ -116,10 +123,11 @@ function red() {
             amarelo = true;
         }
         if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
+            todas.style.display = 'flex'
+            f.style.display = 'block'
+            qcor = qcor + 1
         }
+
     } else if (b.style.backgroundColor == 'blue') {
         r.style.backgroundColor = 'red'
         rgbr.innerHTML = 'rgb(255, 0, 0)'
@@ -136,10 +144,11 @@ function red() {
             magenta = true;
         }
         if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
+            todas.style.display = 'flex'
+            f.style.display = 'block'
+            qcor = qcor + 1
         }
+
     } else {
         r.style.backgroundColor = 'red'
         rgbr.innerHTML = 'rgb(255, 0, 0)'
@@ -151,15 +160,16 @@ function red() {
         res.style.color = 'black'
         res.style.transitionDuration = '0.3s'
         if (!vermelho) {
-                qcor = qcor + 1
-                cor.innerHTML = qcor
-                vermelho = true;
-         
-         if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
-        }   }
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            vermelho = true;
+        }
+        if (qcor == 8) {
+            todas.style.display = 'flex'
+            f.style.display = 'block'
+            qcor = qcor + 1
+        }
+
     }
 }
 
@@ -184,10 +194,11 @@ function green() {
                 magenta = true;
             }
             if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
-        }
+                todas.style.display = 'flex'
+                f.style.display = 'block'
+                qcor = qcor + 1
+            }
+
         } else if (g.style.backgroundColor != 'rgb(0, 255, 0)' && r.style.backgroundColor == 'red') {
             res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), red, rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(255, 0, 0)'
@@ -201,10 +212,11 @@ function green() {
                 vermelho = true;
             }
             if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
-        }
+                todas.style.display = 'flex'
+                f.style.display = 'block'
+                qcor = qcor + 1
+            }
+
         } else if (g.style.backgroundColor != 'rgb(0, 255, 0)' && b.style.backgroundColor == 'blue') {
             res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), blue, rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(0, 0, 255)'
@@ -218,15 +230,16 @@ function green() {
                 azul = true;
             }
             if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
-        }
+                todas.style.display = 'flex'
+                f.style.display = 'block'
+                qcor = qcor + 1
+            }
+
         } else {
             res.style.backgroundColor = 'black'
             rgbres.innerHTML = 'rgb(0, 0 , 0)'
         }
-        
+
     } else if (r.style.backgroundColor == 'red' && b.style.backgroundColor == 'blue') {
         g.style.backgroundColor = 'rgb(0, 255, 0)'
         rgbg.innerHTML = 'rgb(0, 255, 0)'
@@ -243,10 +256,11 @@ function green() {
             branco = true;
         }
         if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
+            todas.style.display = 'flex'
+            f.style.display = 'block'
+            qcor = qcor + 1
         }
+
     } else if (r.style.backgroundColor == 'red') {
         g.style.backgroundColor = 'rgb(0, 255, 0)'
         rgbg.innerHTML = 'rgb(0, 255, 0)'
@@ -263,10 +277,11 @@ function green() {
             amarelo = true;
         }
         if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
+            todas.style.display = 'flex'
+            f.style.display = 'block'
+            qcor = qcor + 1
         }
+
     } else if (b.style.backgroundColor == 'blue') {
         g.style.backgroundColor = 'rgb(0, 255, 0)'
         rgbg.innerHTML = 'rgb(0, 255, 0)'
@@ -278,15 +293,17 @@ function green() {
         res.style.color = 'black'
         res.style.transitionDuration = '0.3s'
         if (!ciano) {
+            qcor = qcor + 1
+            cor.innerHTML = qcor
+            ciano = true;
+
+            if (qcor == 8) {
+                todas.style.display = 'flex'
+                f.style.display = 'block'
                 qcor = qcor + 1
-                cor.innerHTML = qcor
-                ciano = true;
-         
-         if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
-        }   }
+            }
+
+        }
     } else {
         g.style.backgroundColor = 'rgb(0, 255, 0)'
         rgbg.innerHTML = 'rgb(0, 255, 0)'
@@ -303,10 +320,11 @@ function green() {
             verde = true;
         }
         if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
+            todas.style.display = 'flex'
+            f.style.display = 'block'
+            qcor = qcor + 1
         }
+
     }
 }
 
@@ -333,10 +351,11 @@ function blue() {
                 amarelo = true;
             }
             if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
-        }
+                todas.style.display = 'flex'
+                f.style.display = 'block'
+                qcor = qcor + 1
+            }
+
         } else if (b.style.backgroundColor != 'blue' && r.style.backgroundColor == 'red') {
             res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), red, rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(255, 0, 0)'
@@ -350,10 +369,11 @@ function blue() {
                 vermelho = true;
             }
             if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
-        }
+                todas.style.display = 'flex'
+                f.style.display = 'block'
+                qcor = qcor + 1
+            }
+
         } else if (b.style.backgroundColor != 'blue' && g.style.backgroundColor == 'rgb(0, 255, 0)') {
             res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), rgb(0, 255, 0), rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(0, 255, 0)'
@@ -367,15 +387,16 @@ function blue() {
                 verde = true;
             }
             if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
-        }
+                todas.style.display = 'flex'
+                f.style.display = 'block'
+                qcor = qcor + 1
+            }
+
         } else {
             res.style.backgroundColor = 'black'
             rgbres.innerHTML = 'rgb(0, 0, 0)'
         }
-        
+
     } else if (r.style.backgroundColor == 'red' && g.style.backgroundColor == 'rgb(0, 255, 0)') {
         b.style.backgroundColor = 'blue'
         rgbb.innerHTML = 'rgb(0, 0, 255)'
@@ -392,10 +413,11 @@ function blue() {
             branco = true;
         }
         if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
+            todas.style.display = 'flex'
+            f.style.display = 'block'
+            qcor = qcor + 1
         }
+
     } else if (r.style.backgroundColor == 'red') {
         b.style.backgroundColor = 'blue'
         rgbb.innerHTML = 'rgb(0, 0, 255)'
@@ -412,10 +434,11 @@ function blue() {
             magenta = true;
         }
         if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
+            todas.style.display = 'flex'
+            f.style.display = 'block'
+            qcor = qcor + 1
         }
+
     } else if (g.style.backgroundColor == 'rgb(0, 255, 0)') {
         b.style.backgroundColor = 'blue'
         rgbb.innerHTML = 'rgb(0, 0, 255)'
@@ -432,10 +455,11 @@ function blue() {
             ciano = true;
         }
         if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
+            todas.style.display = 'flex'
+            f.style.display = 'block'
+            qcor = qcor + 1
         }
+
     } else {
         b.style.backgroundColor = 'blue'
         rgbb.innerHTML = 'rgb(0, 0, 255)'
@@ -452,11 +476,45 @@ function blue() {
             azul = true;
         }
         if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
+            todas.style.display = 'flex'
+            f.style.display = 'block'
+            qcor = qcor + 1
         }
+
     }
+}
+
+function limpcor() {
+    todas.style.display = 'none'
+    f.style.display = 'none'
+}
+
+function atualizar() {
+    vermelho = false
+    verde = false
+    azul = false
+    magenta = false
+    amarelo = false
+    ciano = false
+    branco = false
+    qcor = 1
+    cor.innerHTML = qcor
+    res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), black, rgb(173, 216, 230))'
+    res.style.color = 'white'
+    res.innerHTML = 'Preto'
+    rgbres.innerHTML = 'rgb(0, 0, 0)'
+    r.style.color = 'white'
+    g.style.color = 'white'
+    b.style.color = 'white'
+    rgbr.innerHTML = 'rgb(0, 0, 0)'
+    rgbg.innerHTML = 'rgb(0, 0, 0)'
+    rgbb.innerHTML = 'rgb(0, 0, 0)'
+    r.style.border = '3px solid white'
+    g.style.border = '3px solid white'
+    b.style.border = '3px solid white'
+    r.style.backgroundColor = 'black'
+    g.style.backgroundColor = 'black'
+    b.style.backgroundColor = 'black'
 }
 
 
@@ -474,39 +532,39 @@ var malpri11 = document.getElementById('malpri11')
 var malpriex = document.getElementById('malpriex')
 
 function ver() {
-    
+
     malpri1.style.display = 'block'
-    setTimeout(function(){
+    setTimeout(function () {
         malpri2.style.display = 'block'
-    },100);
-    setTimeout(function(){
+    }, 100);
+    setTimeout(function () {
         malpri3.style.display = 'block'
-    },200);
-    setTimeout(function(){
+    }, 200);
+    setTimeout(function () {
         malpri4.style.display = 'block'
-    },300);
-    setTimeout(function(){
+    }, 300);
+    setTimeout(function () {
         malpri5.style.display = 'block'
-    },400);
-    setTimeout(function(){
+    }, 400);
+    setTimeout(function () {
         malpri6.style.display = 'block'
-    },500);
-    setTimeout(function(){
+    }, 500);
+    setTimeout(function () {
         malpri7.style.display = 'block'
-    },600);
-    setTimeout(function(){
+    }, 600);
+    setTimeout(function () {
         malpri8.style.display = 'block'
-    },700);
-    setTimeout(function(){
+    }, 700);
+    setTimeout(function () {
         malpri9.style.display = 'block'
-    },800);
-    setTimeout(function(){
+    }, 800);
+    setTimeout(function () {
         malpri10.style.display = 'block'
-    },900);
-    setTimeout(function(){
+    }, 900);
+    setTimeout(function () {
         malpri11.style.display = 'block'
-    },1000);
-    
+    }, 1000);
+
 }
 
 var px = document.getElementById('px')
@@ -524,19 +582,19 @@ function pro() {
 }
 
 function limp() {
-    
-        malpri11.style.display = 'none'
-        malpri10.style.display = 'none'
-        malpri4.style.display = 'none'
-        malpri9.style.display = 'none'
-        malpri8.style.display = 'none'
-        malpri7.style.display = 'none'
-        malpri6.style.display = 'none'
-        malpri5.style.display = 'none'
-        malpri3.style.display = 'none'
-        malpri2.style.display = 'none'
-        malpri1.style.display = 'none'
-        malpriex.style.display = 'none'
+
+    malpri11.style.display = 'none'
+    malpri10.style.display = 'none'
+    malpri4.style.display = 'none'
+    malpri9.style.display = 'none'
+    malpri8.style.display = 'none'
+    malpri7.style.display = 'none'
+    malpri6.style.display = 'none'
+    malpri5.style.display = 'none'
+    malpri3.style.display = 'none'
+    malpri2.style.display = 'none'
+    malpri1.style.display = 'none'
+    malpriex.style.display = 'none'
 }
 var malpricell = document.getElementById('malpricell')
 var cellcentro = document.getElementById('cellcentro')

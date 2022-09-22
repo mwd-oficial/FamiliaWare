@@ -14,7 +14,15 @@
     --cor12: rgb(255, 202, 103);
 }
 
-
+#f {
+    background-color: rgba(0, 0, 0, 0.700);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 2000px;
+    height: 2000px;
+    display: none;
+}
 
 body {
     text-align: center;
@@ -194,11 +202,20 @@ div {
 
 #divgrgbres {
     padding-top: 0;
+    padding-bottom: 10px;
+}
+
+#atupadd {
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 600px) {
 
     body {
+        font-size: 14px;
+    }
+
+    .rgbfont {
         font-size: 14px;
     }
 
@@ -243,22 +260,50 @@ div {
         height: 40px;
         font-size: 10px;
         border: 3px solid white;
-        
+
     }
-    
+
     #b:hover {
         transform: scale(1.2);
         transition-duration: 0.5s;
     }
 
     #res {
-        font-size: 10px;
+        font-size: 15px;
         background-image: linear-gradient(to right, transparent, black, transparent);
         color: white;
         width: 100%;
         margin: auto;
         margin-top: 30px;
     }
+
+    #todas {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        animation: colorido 2s linear infinite;
+    }
+
+    #todasp {
+        text-align: center;
+        margin: auto;
+        padding: 50px;
+        margin: 0px 20px 20px 20px;
+        font-size: 30px;
+        font-weight: bolder;
+        background-color: white;
+        border-radius: 20px;
+        text-shadow: 2px 2px 0px black;
+        animation: coloridop 2s linear infinite;
+    }
+
 
     #cellcentro {
         position: fixed;
@@ -311,8 +356,8 @@ div {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black;
-        color: rgb(248, 156, 14);
+        background-color: rgb(248, 156, 14);
+        border-radius: 50%;
         padding: 0px;
         width: 50px;
         height: 50px;
@@ -338,6 +383,18 @@ div {
         }
     }
 
+    #atualizar {
+        width: 15%;
+        cursor: pointer;
+        padding: 0;
+        animation: pular 2s linear infinite;
+    }
+
+    #atualizar:hover {
+        background-color: white;
+        border-radius: 50%;
+    }
+
     #excomp {
         display: none;
     }
@@ -360,38 +417,9 @@ div {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.502);
     border-radius: 20px;
     width: 95%;
-    animation: colorido 2s linear infinite;
 }
 
-@keyframes colorido {
-    0% {
-        background-color: red;
-    }
 
-    16.67% {
-        background-color: rgb(255, 0, 255);
-    }
-    
-    33.34% {
-        background-color: blue;
-    }
-    
-    50% {
-        background-color: rgb(0, 255, 255);
-    }
-    
-    66.67% {
-        background-color: rgb(0, 255, 0);
-    }
-    
-    83.34% {
-        background-color: yellow;
-    }
-
-    100% {
-        background-color: red;
-    }
-}
 
 .pcenter {
     text-align: center;
@@ -436,6 +464,47 @@ div {
 }
 
 @media screen and (min-width: 600px) {
+
+    #todas {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 55%;
+        border-radius: 60px;
+        animation: colorido 2s linear infinite;
+    }
+
+    #todasp {
+        text-align: center;
+        margin: auto;
+        padding: 50px;
+        font-size: 30px;
+        margin: 0px 0px 20px 0px;
+        font-weight: bolder;
+        background-color: white;
+        border-radius: 20px;
+        text-shadow: 2px 2px 0px black;
+        animation: coloridop 2s linear infinite;
+    }
+
+
+    #atualizar {
+        width: 10%;
+        cursor: pointer;
+        padding: 0;
+        animation: pular 2s linear infinite;
+    }
+
+    #atualizar:hover {
+        background-color: white;
+        border-radius: 50%;
+    }
 
     #malpri1 {
         position: fixed;
@@ -590,8 +659,8 @@ div {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black;
-        color: rgb(248, 156, 14);
+        background-color: rgb(248, 156, 14);
+        border-radius: 50%;
         padding: 0px;
         width: 50px;
         height: 50px;
@@ -633,12 +702,84 @@ div {
     }
 }
 
+@media screen and (max-width: 850px) and (min-width: 600px) {
+    #todas {
+        height: 35%;
+        border-radius: 30px;
+        display: none;
+    }
+
+    #todasp {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 750px) {
     #malpriex {
         font-size: 12.5px;
     }
 }
 
+
+@keyframes colorido {
+    0% {
+        background-color: red;
+    }
+
+    16.67% {
+        background-color: rgb(255, 0, 255);
+    }
+
+    33.34% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: rgb(0, 255, 255);
+    }
+
+    66.67% {
+        background-color: rgb(0, 255, 0);
+    }
+
+    83.34% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes coloridop {
+    0% {
+        color: red;
+    }
+
+    16.67% {
+        color: rgb(255, 0, 255);
+    }
+
+    33.34% {
+        color: blue;
+    }
+
+    50% {
+        color: rgb(0, 255, 255);
+    }
+
+    66.67% {
+        color: rgb(0, 255, 0);
+    }
+
+    83.34% {
+        color: yellow;
+    }
+
+    100% {
+        color: red;
+    }
+}
 
 #apenas {
     background-color: red;
