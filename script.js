@@ -24,14 +24,13 @@ function red() {
         r.style.backgroundColor = 'black'
         r.style.color = 'white'
         r.style.border = '3px solid white'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), black, rgb(173, 216, 230))'
         res.style.color = 'white'
-        res.style.border = '3px solid white'
         if (g.style.backgroundColor == 'rgb(0, 255, 0)' && b.style.backgroundColor == 'blue') {
-            res.style.backgroundColor = 'rgb(0, 255, 255)'
+            res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), rgb(0, 255, 255), rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(0, 255, 255)'
             res.innerHTML = 'Ciano'
             res.style.color = 'black'
-            res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
             if (!ciano) {
                 qcor = qcor + 1
@@ -44,11 +43,10 @@ function red() {
             divqcor.style.border = '5px solid black'
         }
         } else if (r.style.backgroundColor != 'red' && g.style.backgroundColor == 'rgb(0, 255, 0)') {
-            res.style.backgroundColor = 'rgb(0, 255, 0)'
+            res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), rgb(0, 255, 0), rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(0, 255, 0)'
             res.innerHTML = 'Verde'
             res.style.color = 'black'
-            res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
             if (!verde) {
                 qcor = qcor + 1
@@ -56,24 +54,24 @@ function red() {
                 verde = true;
             }
             if (qcor == 8) {
-            divqcor.innerHTML = 'Todas as cores encontradas!'
-            divqcor.style.backgroundColor = 'yellow'
-            divqcor.style.border = '5px solid black'
+                divqcor.innerHTML = 'Todas as cores encontradas!'
+                divqcor.style.backgroundColor = 'yellow'
+                divqcor.style.border = '5px solid black'
         }
         } else if (r.style.backgroundColor != 'red' && b.style.backgroundColor == 'blue') {
-            res.style.backgroundColor = 'blue'
+            res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), blue, rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(0, 0, 255)'
             res.innerHTML = 'Azul'
             res.style.color = 'white'
-            res.style.border = '3px solid black'
-            res.style.transitionDuration = '0.3s'
-             if (!azul) {
-            qcor = qcor + 1
-            cor.innerHTML = qcor
-            azul = true;
-        }
 
-if (qcor == 8) {
+            res.style.transitionDuration = '0.3s'
+            if (!azul) {
+                qcor = qcor + 1
+                cor.innerHTML = qcor
+                azul = true;
+            }
+
+            if (qcor == 8) {
             divqcor.innerHTML = 'Todas as cores encontradas!'
             divqcor.style.backgroundColor = 'yellow'
             divqcor.style.border = '5px solid black'
@@ -85,13 +83,12 @@ if (qcor == 8) {
     } else if (g.style.backgroundColor == 'rgb(0, 255, 0)' && b.style.backgroundColor == 'blue') {
         r.style.backgroundColor = 'red'
         rgbr.innerHTML = 'rgb(255, 0, 0)'
-        res.style.backgroundColor = 'white'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), white, rgb(173, 216, 230))'
         rgbres.innerHTML = 'rgb(255, 255, 255)'
         res.innerHTML = 'Branco'
         r.style.color = 'black'
         r.style.border = '3px solid black'
         res.style.color = 'black'
-        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
         if (!branco) {
             qcor = qcor + 1
@@ -106,13 +103,12 @@ if (qcor == 8) {
     } else if (g.style.backgroundColor == 'rgb(0, 255, 0)') {
         r.style.backgroundColor = 'red'
         rgbr.innerHTML = 'rgb(255, 0, 0)'
-        res.style.backgroundColor = 'rgb(255, 255, 0)'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), yellow, rgb(173, 216, 230))'
         rgbres.innerHTML = 'rgb(255, 255, 0)'
         res.innerHTML = 'Amarelo'
         r.style.color = 'black'
         r.style.border = '3px solid black'
         res.style.color = 'black'
-        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
         if (!amarelo) {
             qcor = qcor + 1
@@ -127,13 +123,12 @@ if (qcor == 8) {
     } else if (b.style.backgroundColor == 'blue') {
         r.style.backgroundColor = 'red'
         rgbr.innerHTML = 'rgb(255, 0, 0)'
-        res.style.backgroundColor = 'rgb(255, 0, 255)'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), rgb(255, 0, 255), rgb(173, 216, 230))'
         rgbres.innerHTML = 'rgb(255, 0, 255)'
         res.innerHTML = 'Magenta'
         r.style.color = 'black'
         r.style.border = '3px solid black'
         res.style.color = 'black'
-        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
         if (!magenta) {
             qcor = qcor + 1
@@ -148,13 +143,12 @@ if (qcor == 8) {
     } else {
         r.style.backgroundColor = 'red'
         rgbr.innerHTML = 'rgb(255, 0, 0)'
-        res.style.backgroundColor = 'red'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), red, rgb(173, 216, 230))'
         rgbres.innerHTML = 'rgb(255, 0, 0)'
         res.innerHTML = 'Vermelho'
         r.style.color = 'black'
         r.style.border = '3px solid black'
         res.style.color = 'black'
-        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
         if (!vermelho) {
                 qcor = qcor + 1
@@ -176,14 +170,13 @@ function green() {
         res.innerHTML = 'Preto'
         g.style.color = 'white'
         g.style.border = '3px solid white'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), black, rgb(173, 216, 230))'
         res.style.color = 'white'
-        res.style.border = '3px solid white'
         if (r.style.backgroundColor == 'red' && b.style.backgroundColor == 'blue') {
-            res.style.backgroundColor = 'rgb(255, 0, 255)'
+            res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), rgb(255, 0, 255), rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(255, 0, 255)'
             res.innerHTML = 'Magenta'
             res.style.color = 'black'
-            res.style.border = '3px solid black'
             res.style.transitionDuration = '0.3s'
             if (!magenta) {
                 qcor = qcor + 1
@@ -196,11 +189,11 @@ function green() {
             divqcor.style.border = '5px solid black'
         }
         } else if (g.style.backgroundColor != 'rgb(0, 255, 0)' && r.style.backgroundColor == 'red') {
-            res.style.backgroundColor = 'red'
+            res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), red, rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(255, 0, 0)'
             res.innerHTML = 'Vermelho'
             res.style.color = 'black'
-            res.style.border = '3px solid black'
+
             res.style.transitionDuration = '0.3s'
             if (!vermelho) {
                 qcor = qcor + 1
@@ -213,11 +206,11 @@ function green() {
             divqcor.style.border = '5px solid black'
         }
         } else if (g.style.backgroundColor != 'rgb(0, 255, 0)' && b.style.backgroundColor == 'blue') {
-            res.style.backgroundColor = 'blue'
+            res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), blue, rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(0, 0, 255)'
             res.innerHTML = 'Azul'
             res.style.color = 'white'
-            res.style.border = '3px solid black'
+
             res.style.transitionDuration = '0.3s'
             if (!azul) {
                 qcor = qcor + 1
@@ -237,13 +230,12 @@ function green() {
     } else if (r.style.backgroundColor == 'red' && b.style.backgroundColor == 'blue') {
         g.style.backgroundColor = 'rgb(0, 255, 0)'
         rgbg.innerHTML = 'rgb(0, 255, 0)'
-        res.style.backgroundColor = 'white'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), white, rgb(173, 216, 230))'
         rgbres.innerHTML = 'rgb(255, 255, 255)'
         res.innerHTML = 'Branco'
         g.style.color = 'black'
         g.style.border = '3px solid black'
         res.style.color = 'black'
-        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
         if (!branco) {
             qcor = qcor + 1
@@ -258,13 +250,12 @@ function green() {
     } else if (r.style.backgroundColor == 'red') {
         g.style.backgroundColor = 'rgb(0, 255, 0)'
         rgbg.innerHTML = 'rgb(0, 255, 0)'
-        res.style.backgroundColor = 'rgb(255, 255, 0)'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), yellow, rgb(173, 216, 230))'
         rgbres.innerHTML = 'rgb(255, 255, 0)'
         res.innerHTML = 'Amarelo'
         g.style.color = 'black'
         g.style.border = '3px solid black'
         res.style.color = 'black'
-        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
         if (!amarelo) {
             qcor = qcor + 1
@@ -279,13 +270,12 @@ function green() {
     } else if (b.style.backgroundColor == 'blue') {
         g.style.backgroundColor = 'rgb(0, 255, 0)'
         rgbg.innerHTML = 'rgb(0, 255, 0)'
-        res.style.backgroundColor = 'rgb(0, 255, 255)'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), rgb(0, 255, 255), rgb(173, 216, 230))'
         rgbres.innerHTML = 'rgb(0, 255, 255)'
         res.innerHTML = 'Ciano'
         g.style.color = 'black'
         g.style.border = '3px solid black'
         res.style.color = 'black'
-        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
         if (!ciano) {
                 qcor = qcor + 1
@@ -300,13 +290,12 @@ function green() {
     } else {
         g.style.backgroundColor = 'rgb(0, 255, 0)'
         rgbg.innerHTML = 'rgb(0, 255, 0)'
-        res.style.backgroundColor = 'rgb(0, 255, 0)'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), rgb(0, 255, 0), rgb(173, 216, 230))'
         rgbres.innerHTML = 'rgb(0, 255, 0)'
         res.innerHTML = 'Verde'
         g.style.color = 'black'
         g.style.border = '3px solid black'
         res.style.color = 'black'
-        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
         if (!verde) {
             qcor = qcor + 1
@@ -329,14 +318,14 @@ function blue() {
         res.innerHTML = 'Preto'
         b.style.color = 'white'
         b.style.border = '3px solid white'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), black, rgb(173, 216, 230))'
         res.style.color = 'white'
-        res.style.border = '3px solid white'
         if (r.style.backgroundColor == 'red' && g.style.backgroundColor == 'rgb(0, 255, 0)') {
-            res.style.backgroundColor = 'rgb(255,255,0)'
+            res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), yellow, rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(255, 255, 0)'
             res.innerHTML = 'Amarelo'
             res.style.color = 'black'
-            res.style.border = '3px solid black'
+
             res.style.transitionDuration = '0.3s'
             if (!amarelo) {
                 qcor = qcor + 1
@@ -349,11 +338,11 @@ function blue() {
             divqcor.style.border = '5px solid black'
         }
         } else if (b.style.backgroundColor != 'blue' && r.style.backgroundColor == 'red') {
-            res.style.backgroundColor = 'red'
+            res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), red, rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(255, 0, 0)'
             res.innerHTML = 'Vermelho'
             res.style.color = 'black'
-            res.style.border = '3px solid black'
+
             res.style.transitionDuration = '0.3s'
             if (!vermelho) {
                 qcor = qcor + 1
@@ -366,11 +355,11 @@ function blue() {
             divqcor.style.border = '5px solid black'
         }
         } else if (b.style.backgroundColor != 'blue' && g.style.backgroundColor == 'rgb(0, 255, 0)') {
-            res.style.backgroundColor = 'rgb(0, 255, 0)'
+            res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), rgb(0, 255, 0), rgb(173, 216, 230))'
             rgbres.innerHTML = 'rgb(0, 255, 0)'
             res.innerHTML = 'Verde'
             res.style.color = 'black'
-            res.style.border = '3px solid black'
+
             res.style.transitionDuration = '0.3s'
             if (!verde) {
                 qcor = qcor + 1
@@ -390,13 +379,12 @@ function blue() {
     } else if (r.style.backgroundColor == 'red' && g.style.backgroundColor == 'rgb(0, 255, 0)') {
         b.style.backgroundColor = 'blue'
         rgbb.innerHTML = 'rgb(0, 0, 255)'
-        res.style.backgroundColor = 'white'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), white, rgb(173, 216, 230))'
         rgbres.innerHTML = 'rgb(255, 255, 255)'
         res.innerHTML = 'Branco'
-        b.style.color = 'black'
+        b.style.color = 'white'
         b.style.border = '3px solid black'
         res.style.color = 'black'
-        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
         if (!branco) {
             qcor = qcor + 1
@@ -411,13 +399,12 @@ function blue() {
     } else if (r.style.backgroundColor == 'red') {
         b.style.backgroundColor = 'blue'
         rgbb.innerHTML = 'rgb(0, 0, 255)'
-        res.style.backgroundColor = 'rgb(255, 0, 255)'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), rgb(255, 0, 255), rgb(173, 216, 230))'
         rgbres.innerHTML = 'rgb(255, 0, 255)'
         res.innerHTML = 'Magenta'
         b.style.color = 'white'
         b.style.border = '3px solid black'
         res.style.color = 'black'
-        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
         if (!magenta) {
             qcor = qcor + 1
@@ -432,13 +419,12 @@ function blue() {
     } else if (g.style.backgroundColor == 'rgb(0, 255, 0)') {
         b.style.backgroundColor = 'blue'
         rgbb.innerHTML = 'rgb(0, 0, 255)'
-        res.style.backgroundColor = 'rgb(0, 255, 255)'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), rgb(0, 255, 255), rgb(173, 216, 230))'
         rgbres.innerHTML = 'rgb(0, 255, 255)'
         res.innerHTML = 'Ciano'
         b.style.color = 'white'
         b.style.border = '3px solid black'
         res.style.color = 'black'
-        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
         if (!ciano) {
             qcor = qcor + 1
@@ -453,13 +439,12 @@ function blue() {
     } else {
         b.style.backgroundColor = 'blue'
         rgbb.innerHTML = 'rgb(0, 0, 255)'
-        res.style.backgroundColor = 'blue'
+        res.style.backgroundImage = 'linear-gradient(to right, rgb(173, 216, 230), blue, rgb(173, 216, 230))'
         rgbres.innerHTML = 'rgb(0, 0, 255)'
         res.innerHTML = 'Azul'
         b.style.color = 'white'
         b.style.border = '3px solid black'
         res.style.color = 'white'
-        res.style.border = '3px solid black'
         res.style.transitionDuration = '0.3s'
         if (!azul) {
             qcor = qcor + 1

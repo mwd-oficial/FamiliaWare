@@ -7,7 +7,7 @@
 
 :root {
     --cor4: rgb(173, 216, 230);
-    --cor5: hwb(273 69% 1%);
+    --cor5: rgb(218, 176, 252);
     --cor6: rgb(186, 252, 177);
     --cor7: rgb(242, 226, 171);
     --cor8: rgb(245, 194, 184);
@@ -185,18 +185,15 @@ div {
 }
 
 #res {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border: 3px solid white;
+    background-image: linear-gradient(to right, transparent, black, transparent);
     color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.518);
-    width: 150px;
-    height: 50px;
+    width: 100%;
     margin: auto;
-    margin: 10px 0px;
+    margin-top: 30px;
+}
+
+#divgrgbres {
+    padding-top: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -223,7 +220,7 @@ div {
         font-size: 10px;
         border: 3px solid white;
     }
-    
+
     #r:hover {
         transform: scale(1.2);
         transition-duration: 0.5s;
@@ -246,7 +243,7 @@ div {
         height: 40px;
         font-size: 10px;
         border: 3px solid white;
-
+        
     }
     
     #b:hover {
@@ -255,13 +252,12 @@ div {
     }
 
     #res {
-        width: 55px;
-        height: 0px;
         font-size: 10px;
-        border: 3px solid white;
+        background-image: linear-gradient(to right, transparent, black, transparent);
+        color: white;
+        width: 100%;
         margin: auto;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
     #cellcentro {
@@ -364,6 +360,37 @@ div {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.502);
     border-radius: 20px;
     width: 95%;
+    animation: colorido 2s linear infinite;
+}
+
+@keyframes colorido {
+    0% {
+        background-color: red;
+    }
+
+    16.67% {
+        background-color: rgb(255, 0, 255);
+    }
+    
+    33.34% {
+        background-color: blue;
+    }
+    
+    50% {
+        background-color: rgb(0, 255, 255);
+    }
+    
+    66.67% {
+        background-color: rgb(0, 255, 0);
+    }
+    
+    83.34% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: red;
+    }
 }
 
 .pcenter {
@@ -574,6 +601,7 @@ div {
     #px {
         display: none;
     }
+
     #pnx {
         display: none;
         padding-bottom: 0;
@@ -604,7 +632,8 @@ div {
         font-size: 15px;
     }
 }
-@media screen and (max-width: 750px)  {
+
+@media screen and (max-width: 750px) {
     #malpriex {
         font-size: 12.5px;
     }
@@ -627,6 +656,7 @@ div {
     border: 5px solid rgb(26, 26, 26);
     border-radius: 20px;
 }
+
 .ant {
     text-align: center;
     background-color: rgb(248, 156, 14);
