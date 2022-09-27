@@ -1,9 +1,11 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
+
 
 :root {
     --cor4: rgb(173, 216, 230);
@@ -26,7 +28,9 @@
 
 body {
     text-align: center;
-    font: normal 17.5px Arial;
+    font-weight: normal;
+    font-size: 17.5px;
+    font-family: 'Kalam', Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to bottom, lightblue, rgb(175, 255, 230), lightblue);
 }
 
@@ -36,13 +40,63 @@ header {
     margin-bottom: 40px;
 }
 
+#h1p {
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+#h2zes {
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 0;
+}
+
 mark {
     background-color: var(--cor8);
     border: 5px solid var(--cor5);
 }
 
 h1 {
-    padding: 20px 0px;
+    padding: 20px 0px 0px 0px;
+    margin-bottom: 20px;
+}
+
+#nome {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    padding: 10px;
+    margin: auto;
+    background-color: var(--cor4);
+    max-width: 400px;
+    animation: animanome 3s linear infinite;
+}
+
+@keyframes animanome {
+    0% {
+        background-color: var(--cor4);
+    }
+    30% {
+        background-color: var(--cor5);
+    }
+    40% {
+        background-color: var(--cor6);
+    }
+    60% {
+        background-color: var(--cor7);
+    }
+    80% {
+        background-color: var(--cor8);
+    }
+    100% {
+        background-color: var(--cor4);
+    }
 }
 
 main {
@@ -213,6 +267,15 @@ div {
 
     body {
         font-size: 14px;
+    }
+
+    #h1p {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    #nome {
+        font-size: 17px;
     }
 
     .rgbfont {
