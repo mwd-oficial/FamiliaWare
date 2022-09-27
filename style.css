@@ -454,6 +454,10 @@ div {
         border-radius: 50%;
     }
 
+    #atudiv {
+        padding: 0;
+    }
+
     #excomp {
         display: none;
     }
@@ -563,6 +567,10 @@ div {
     #atualizar:hover {
         background-color: white;
         border-radius: 50%;
+    }
+
+    #atudiv {
+        padding: 0;
     }
 
     #malpri1 {
@@ -836,7 +844,7 @@ div {
     }
 }
 
-#apenas {
+.apenas {
     background-color: red;
     color: white;
     text-transform: uppercase;
