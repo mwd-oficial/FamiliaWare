@@ -274,6 +274,10 @@ div {
         margin-bottom: 0;
     }
 
+    #nome {
+        font-size: 10px;
+    }
+
     .rgbfont {
         font-size: 14px;
     }
