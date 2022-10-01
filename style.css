@@ -116,11 +116,6 @@ p {
 
 }
 
-main h2 {
-    background-image: linear-gradient(to right, transparent, var(--cor6), transparent);
-    padding: 20px 0px;
-    margin: 40px 20px;
-}
 
 main h3 {
     background-image: linear-gradient(to right, transparent, var(--cor8), transparent);
@@ -141,10 +136,38 @@ div {
     padding: 20px 0px;
 }
 
-.imgshm {
-    margin: auto;
-    margin-bottom: 20px;
+.imgshm h2 {
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px 20px;
+}
+
+.imgshm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+    margin: 40px 0px 20px 0px;
+}
+
+#imgsoft {
+    background-image: url('softimg.jpg');
+}
+
+#imghard {
+    background-image: url('hardimg.jpg');
+}
+
+#imgmal {
+    background-image: url('maling.jpg');
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #qcor {
@@ -164,7 +187,7 @@ div {
 }
 
 
-#r {
+#r, #g, #b{
     font: normal 17.5px Arial;
     display: flex;
     justify-content: center;
@@ -182,67 +205,12 @@ div {
     cursor: pointer;
 }
 
-#r:hover {
+#r:hover, #g:hover, #b:hover{
     transform: scale(1.1);
     transition-duration: 0.3s;
 }
 
-#r:not(:hover) {
-    transition-duration: 0.5s;
-}
-
-#g {
-    font: normal 17.5px Arial;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    background-color: black;
-    border: 3px solid white;
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.518);
-    width: 150px;
-    height: 100px;
-    margin: 10px 10px;
-    cursor: pointer;
-
-}
-
-#g:hover {
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-}
-
-#g:not(:hover) {
-    transition-duration: 0.5s;
-}
-
-#b {
-    font: normal 17.5px Arial;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    background-color: black;
-    border: 3px solid white;
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.518);
-    width: 150px;
-    height: 100px;
-    margin: 10px 10px;
-    cursor: pointer;
-}
-
-#b:hover {
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-}
-
-#b:not(:hover) {
+#r:not(:hover), #g:not(:hover), #b:not(:hover){
     transition-duration: 0.5s;
 }
 
@@ -267,6 +235,9 @@ div {
 
     body {
         font-size: 14px;
+    }
+    .imgshm {
+        height: 30vh;
     }
 
     #h1p {
@@ -294,43 +265,19 @@ div {
         font-size: 10px;
     }
 
-    #r {
+    #r, #g, #b{
         width: 60px;
         height: 40px;
         font-size: 10px;
         border: 3px solid white;
     }
 
-    #r:hover {
+    #r:hover, #g:hover, #b:hover {
         transform: scale(1.2);
         transition-duration: 0.5s;
     }
 
-    #g {
-        width: 60px;
-        height: 40px;
-        font-size: 10px;
-        border: 3px solid white;
-    }
-
-    #g:hover {
-        transform: scale(1.2);
-        transition-duration: 0.5s;
-    }
-
-    #b {
-        width: 60px;
-        height: 40px;
-        font-size: 10px;
-        border: 3px solid white;
-
-    }
-
-    #b:hover {
-        transform: scale(1.2);
-        transition-duration: 0.5s;
-    }
-
+    
     #res {
         font-size: 15px;
         background-image: linear-gradient(to right, transparent, black, transparent);
@@ -339,7 +286,7 @@ div {
         margin: auto;
         margin-top: 30px;
     }
-
+    
     #todas {
         position: fixed;
         top: 50%;
@@ -436,7 +383,7 @@ div {
         50% {
             background-color: red;
         }
-
+        
         100% {
             background-color: white;
         }
@@ -457,7 +404,6 @@ div {
     #atudiv {
         padding: 0;
     }
-
     #excomp {
         display: none;
     }
