@@ -8,12 +8,12 @@
 
 
 :root {
-    --cor4: rgb(173, 216, 230);
-    --cor5: rgb(218, 176, 252);
-    --cor6: rgb(186, 252, 177);
-    --cor7: rgb(242, 226, 171);
-    --cor8: rgb(245, 194, 184);
-    --cor12: rgb(255, 202, 103);
+    --cor4: rgb(173, 216, 230) !important;
+    --cor5: rgb(218, 176, 252) !important;
+    --cor6: rgb(186, 252, 177) !important;
+    --cor7: rgb(242, 226, 171) !important;
+    --cor8: rgb(245, 194, 184) !important;
+    --cor12: rgb(255, 202, 103) !important;
 }
 
 #f {
@@ -21,8 +21,8 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    min-width: 2000px;
-    height: 2000px;
+    min-width: 100vw;
+    min-height: 100vh;
     display: none;
 }
 
@@ -101,7 +101,7 @@ h1 {
 
 main {
     margin: auto;
-    background-color: white;
+    background-color: white !important;
     border: 10px solid var(--cor6);
     border-radius: 40px;
     padding: 0px 0px;
@@ -144,30 +144,30 @@ div {
 }
 
 .imgshm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
     height: 70vh;
     width: 100%;
-    margin: 40px 0px 20px 0px;
+    margin: 40px 0px 20px 0px !important;
 }
 
 #imgsoft {
-    background-image: url('softimg.jpg');
+    background-image: url('softimg.jpg') !important;
 }
 
 #imghard {
-    background-image: url('hardimg.jpg');
+    background-image: url('hardimg.jpg') !important;
 }
 
 #imgmal {
-    background-image: url('maling.jpg');
-    background-color: black;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url('maling.jpg') !important;
+    background-color: black !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
 }
 
 #qcor {
@@ -197,7 +197,7 @@ div {
     border: 3px solid white;
     color: white;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 10px !important;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.518);
     width: 150px;
     height: 100px;
@@ -236,6 +236,7 @@ div {
     body {
         font-size: 14px;
     }
+
     .imgshm {
         height: 30vh;
     }
@@ -277,7 +278,6 @@ div {
         transition-duration: 0.5s;
     }
 
-    
     #res {
         font-size: 15px;
         background-image: linear-gradient(to right, transparent, black, transparent);
@@ -286,7 +286,7 @@ div {
         margin: auto;
         margin-top: 30px;
     }
-    
+
     #todas {
         position: fixed;
         top: 50%;
@@ -383,7 +383,7 @@ div {
         50% {
             background-color: red;
         }
-        
+
         100% {
             background-color: white;
         }
@@ -401,9 +401,6 @@ div {
         border-radius: 50%;
     }
 
-    #atudiv {
-        padding: 0;
-    }
     #excomp {
         display: none;
     }
@@ -513,10 +510,6 @@ div {
     #atualizar:hover {
         background-color: white;
         border-radius: 50%;
-    }
-
-    #atudiv {
-        padding: 0;
     }
 
     #malpri1 {
@@ -790,7 +783,7 @@ div {
     }
 }
 
-.apenas {
+#apenas {
     background-color: red;
     color: white;
     text-transform: uppercase;
@@ -824,8 +817,8 @@ div {
 .botao {
     background-color: var(--cor5);
     border: 5px solid var(--cor6);
-    border-radius: 50px;
-    padding: 10px 40px 10px 40px;
+    border-radius: 50px !important;
+    padding: 10px 40px 10px 40px !important;
     cursor: pointer;
 }
 
@@ -836,39 +829,40 @@ div {
     transition-duration: 0.5s;
 }
 
+.botao:not(:hover) {
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
 .download {
-    background-color: green;
-    color: white;
-    border: 0px;
-    border-radius: 10px;
-    padding: 10px 40px 10px 40px;
+    background-image: linear-gradient(to bottom, rgb(0, 255, 0), darkgreen) !important;
+    color: white !important;
+    border: 0px !important;
+    border-radius: 10px !important;
+    padding: 10px 40px 10px 40px !important;
     cursor: pointer;
     animation: pular 2s linear infinite;
 }
 
 .download:hover {
-    background-color: rgb(0, 255, 0);
+    background-image: linear-gradient(to bottom, darkgreen, rgb(0, 255, 0)) !important;
 }
 
 
-.botao:not(:hover) {
-    transform: scale(1);
-    transition-duration: 0.5s;
-}
 
 .vista:hover {
-    background-color: rgb(255, 222, 160);
-    border: 10px solid rgb(255, 205, 105);
+    background-color: rgb(255, 222, 160) !important;
+    border: 10px solid rgb(255, 205, 105) !important;
 
 }
 
 .vista {
-    padding: 20px;
-    margin: 30px 0px;
-    font-size: 25px;
-    background-color: var(--cor12);
-    border: 10px solid orange;
-    border-radius: 50px;
+    padding: 20px !important;
+    margin: 30px 0px !important;
+    font-size: 25px !important;
+    color: black !important;
+    background-color: var(--cor12) !important;
+    border: 10px solid orange !important;
+    border-radius: 50px !important;
     cursor: pointer;
     animation: pular 2s linear infinite;
 }
