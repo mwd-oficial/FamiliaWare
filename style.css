@@ -783,7 +783,7 @@ div {
     }
 }
 
-#apenas {
+.apenas {
     background-color: red;
     color: white;
     text-transform: uppercase;
