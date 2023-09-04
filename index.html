@@ -6,15 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Família Ware</title>
 </head>
 
 <body>
     <header>
+        <div id="h1p">
         <h1><mark>Trabalho de PLE</mark></h1>
+        <p id="nome">Pedro Vinhola, Mateus Gonçalves e João Pedro</p>
+        </div>
+        <div id="h2zes">
         <h2>Eixo do Trabalho: Tecnologia</h2>
         <h2>Assunto: Aparelhos Eletrônicos</h2>
         <h2>Delimitação: Família Ware</h2>
+        </div>
     </header>
     <main>
         <section id="familiaware">
@@ -38,8 +44,8 @@
             </p>
         </section>
         <section id="software">
-            <h2>Parte 1: Software</h2>
-            <img src="softimg.jpg" alt="" class="imgshm">
+           
+            <div class="imgshm" id="imgsoft"> <h2>Parte 1: Software</h2></div>
             <div>
                 <h3>Definição</h3>
                 <div class="def">Softwares</div>
@@ -101,7 +107,7 @@
             <div id="rgbf">
                 <div class="parrgb">
                     <p class="pcenter">Representação de cores: o rgb</p><br>
-                    <p class="pcenter">- <strong>rgb (red, green, blue)</strong> é um dos tipos de representação de cores em css, sendo 0 o
+                    <p class="parrgb">- <strong>rgb (red, green, blue)</strong> é um dos tipos de representação de cores em css, sendo 0 o
                         valor mínimo e 255 o valor máximo</p>
                     </div>
                     <p class="parrgb">- Clique nos botões <strong>vermelho, verde e azul</strong> e descubra todas as cores</p>
@@ -142,8 +148,7 @@
             </div>
         </section>
         <section id="hardware">
-            <h2>Parte 2: Hardware</h2>
-            <img src="hardimg.jpg" alt="" class="imgshm">
+            <div class="imgshm" id="imghard"><h2>Parte 2: Hardware</h2></div>
             <h3>Definição</h3>
             <div class="def">Hardware: </div>
             <p>
@@ -278,15 +283,14 @@
                 <p id="tin"><a href='https://www.tinkercad.com/things/kB8yrY7nNi2' target="_blank"><img src="imgtin.png"
                             alt="img tinkercad" id="imgtin"></a></p>
                 <p>
-                    <strong>APENAS PARA COMPUTADORES</strong> - Clique em <strong>SIMULAR</strong> e depois <strong>INICIAR SIMULAÇÃO</strong>. Depois é só clicar no botão do projeto (indicado pela
+                    <strong class="apenas">APENAS PARA COMPUTADORES</strong> - Clique em <strong>SIMULAR</strong> e depois <strong>INICIAR SIMULAÇÃO</strong>. Depois é só clicar no botão do projeto (indicado pela
                     <strong>seta vermelha</strong>) e veja ele funcionando!
                 </p>
             </div>
 
         </section>
         <section id="malware">
-            <h2>Parte 3: Malware</h2>
-            <img src="malimg.jpg" alt="" class="imgshm">
+            <div class="imgshm" id="imgmal"><h2>Parte 3: Malware</h2></div>
             <p>Seria ótimo se a Internet fosse um lugar seguro e íntegro para todos, mas não podemos negar que os
                 criminosos on-line e os <strong>hackers</strong> estão escondidos por toda parte, tentando causar problemas. Uma forma
                 usada por eles para causar problemas é espalhar <strong>malware</strong>. Você pode se proteger ao entender o que é um
@@ -368,7 +372,7 @@
                         <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri">
                     </div>
                     <div id="malpri11" class="divmalpri">
-                        <div id="x" onclick="prox()"><img src="close-circle-outline.svg" alt=""></div>
+                        <img src="close-circle-outline.svg" alt="" id="x" onclick="prox()">
                         <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri"><br>
                         <p class="ant">Instale este antivírus para se proteger!</p><input type="button"
                             value="↓ DOWNLOAD" class="download" onclick="pro()">
@@ -391,7 +395,7 @@
                 <div id="excell">
                     <input type="button" value="Clique para ver" class="vista" id="vercell" onclick="vercell()">
                     <div id="malpricell" class="divmalpri">
-                        <div id="xcell" onclick="proxcell()"><img src="close-circle-outline.svg" alt=""></div>
+                        <img src="close-circle-outline.svg" alt="" id="xcell" onclick="proxcell()">
                         <div id="cellcentro">
                             <p class="pmalpri">Malware Detectado</p><img src="alert.png" alt="" class="imgmalpri"><br>
                             <p class="ant">Instale este antivírus agora para se proteger!</p><input type="button"
@@ -415,7 +419,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="pcenter" id="apenas"><strong>É apenas um exemplo</strong></p>
+                <p class="pcenter apenas"><strong>É apenas um exemplo</strong></p>
         </section>
         <section id="outros">
             <h2>Outros Ware</h2>
@@ -426,7 +430,7 @@
     </main>
     <p id="ace">Clique na imagem a seguir para acessar meu GitHub:</p>
     <footer>
-        <a href="https://github.com/mwd-oficial" target="_blank"><img src="logoMWDt.png" alt="" id="logo"></a>
+        <a href="https://mwd-oficial.github.io/sobre" target="_blank"><img src="logoMWDt.png" alt="" id="logo"></a>
     </footer>
     <div id="f"></div>
             <div id="todas">
